@@ -12,7 +12,7 @@
 ### Descrição ☝
 > Desafio Prático
 > que consiste em um sistema de Usuários, Notícias e Categorias de Notícias. Utilizando MySQL como Banco de Dados e o Prisma como ORM.
-> praticando relacionamentos entre tabelas, Many to Many
+> praticando relacionamentos entre tabelas Many to Many.
 > As relações muitos-para-muitos referem-se a relações em que zero ou mais registros em um lado da relação podem ser conectados a zero ou mais registros no outro lado.
 
 
