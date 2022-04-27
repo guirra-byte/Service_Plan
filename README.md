@@ -11,20 +11,30 @@
 
 ### Descrição ☝
 > Desafio Prático
-> que consiste em um sistema de cadastro de Livros e Autores. Utilizando MySQL como Banco de Dados e o Prisma como ORM.
-> relacionamento One to Many -> Um para Muitos
+> que consiste em um sistema de Usuários, Notícias e Categorias de Notícias. Utilizando MySQL como Banco de Dados e o Prisma como ORM.
+> praticando relacionamentos entre tabelas, Many to Many
+> As relações muitos-para-muitos referem-se a relações em que zero ou mais registros em um lado da relação podem ser conectados a zero ou mais registros no outro lado.
 
 
 ## Ajustes e melhorias ⚙🛠
 
 O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
 
-- [x] Cadastrar Livros
+- [x] Cadastrar Usuários verificado por Middleware
+- [x] Procurar um Usuário pelo userId
+- [x] Procurar todos os Usuários
+- [x] Cadastrar Notícias
+- [x] Procurar Notícias pelo NewsId
+- [x] Procurar todas as Notícias
+- [x] Cadastrar Categoria de Notícias
+- [x] Busca por todas as Categorias
+- [x] Busca por um Categoria pelo CategoryId
 - [x] Inserção no Banco de Dados
-- [x] Verificação de Livro
-- [x] Deletar Livro
-- [x] Relacionamento entre o Autor e seus respectivos Livros - One to Many
-- [ ] Atualizar Livro
+- [ ] Verificação se o Usuário possui o Plano de Serviço ativo 
+- [ ] Verificação de quantas Notícias o User possui
+- [x] Relacionamento entre as Categories e as Notícias - Many to Many
+- [x] Relacionamento entre o User e as Notícias - One to Many
+- [x] Busca de Notícias por Palavras-Chaves
 
 ## Feito Com: ⚒
 ![Node.Js](https://img.shields.io/badge/Node.js-52b788?style=for-the-badge&logo=node.js&logoColor=white)
