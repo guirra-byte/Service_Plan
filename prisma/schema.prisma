@@ -1,0 +1,68 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+
+  id          String   @id @default(uuid())
+  name        String
+  email       String   @unique
+  plan_access Boolean?
+  created_at  DateTime @default(now())
+  updated_at  DateTime @updatedAt
+
+  User_New User_New[]
+  @@map("users")
+}
+
+model New {
+
+  id          String   @id @default(uuid())
+  title       String
+  description String
+  created_at  DateTime @default(now())
+  updated_at  DateTime @updatedAt
+
+  User_New     User_New[]
+  Category_New Category_New[]
+  @@map("news")
+}
+
+model Category {
+
+  id          String @id @default(uuid())
+  title       String @unique
+  description String
+
+
+
+  Category_New Category_New[]
+  @@map("categories")
+}
+
+model User_New {
+
+  id         String @id @default(uuid())
+  fk_user_id String
+  fk_new_id  String
+  user       User   @relation(fields: [fk_user_id], references: [id])
+  new        New    @relation(fields: [fk_new_id], references: [id])
+
+  @@map("user_news")
+}
+
+model Category_New {
+
+  id             String   @id @default(uuid())
+  new            String
+  fk_new_id      New      @relation(fields: [new], references: [id])
+  category       Category @relation(fields: [fk_category_id], references: [id])
+  fk_category_id String
+
+  @@map("category_news")
+}

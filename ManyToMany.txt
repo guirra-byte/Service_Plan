@@ -1,0 +1,62 @@
+Relacionamento entre tabelas:
+Many To Many
+
+Nas News e nas Categories;
+Relacionamento de Criação e Conexão;
+Criação de uma Notícia e sequencialmente Conectar essa notícia com uma Category
+Se !Category devo criar junto a Criação da Notícia
+
+Devo fazer um UseCase para cada uma dessas situações?!
+
+3 formas de Criação:
+Quando há dados nas tabelas de Relações
+Quando há dados somente em uma das Tabelas de Relações
+Quando não há dado algum nas tabelas de Relações
+
+Fazer busca nas Tables de Relações Many to Many:
+
+Como fazer a busca?
+Buscar apenas um item:
+- Utilização do Where
+- Utilização do Include
+- Com seus News
+- Com a Category dessas News
+Include?!
+
+Trabalhando com Buscas com Filtering e Sorting:
+OR e AND
+Condicionais SQL
+
+Busca em DB(DataBase ou Banco de Dados):
+Pagination:
+
+Front-End -> Dificuldade em consultar o Banco de Dados
+Realizar a Pagination no Prisma
+Logo após repassar ao Front-End tornando o arquivo menos robusto
+
+Skip e Take:
+Skip -> Pular Itens de um Array ou do Próprio Banco de Dados
+Take -> Quantos itens devem ser buscados
+
+Utilizar um Loop While
+Array nunca retornará um Undefined
+
+QueryRaw:
+Prisma converte o nosso POO em SQL Nativo
+Query na mão
+
+const result = await prisma.$queryRaw<String[]>(
+
+    Prisma.sql`SELECT`
+)
+
+Mapear Banco de Dados:
+DATABASE_URL="mysql://root:V84816756@localhost:3306/servicePlan"
+Selecionar qual o Banco de Dados deve ser mapeado pelo Prisma
+E logo em Seguida utilizo o Prisma DB Pull
+O Prisma mapea o Meu Banco de Dados e me disponiblizao todo esse Schema do Banco de Dados
+Traz até mesmo as Relations existentes
+
+
+
+
