@@ -11,8 +11,8 @@
 
 ### Descrição ☝
 > Desafio Prático
-> que consiste em um sistema de Usuários, Notícias e Categorias de Notícias. Utilizando MySQL como Banco de Dados e o Prisma como ORM.
-> praticando relacionamentos entre tabelas Many to Many.
+> que consiste em um sistema de Usuários, Notícias e Categorias de Notícias. Utilizando `MySQL` como Banco de Dados e o utilizando o `Prisma ORM` para orquestrar mais performaticamente o Banco de Dados.
+> **projeto criado com o intuito de praticar relações Many to Many.**
 > As relações muitos-para-muitos referem-se a relações em que zero ou mais registros em um lado da relação podem ser conectados a zero ou mais registros no outro lado.
 
 
@@ -32,6 +32,7 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 - [x] Inserção no Banco de Dados
 - [ ] Verificação se o Usuário possui o Plano de Serviço ativo 
 - [ ] Verificação de quantas Notícias o User possui
+- [ ] Autorização por meio de Auth Token - `JWT`
 - [x] Relacionamento entre as Categories e as Notícias - Many to Many
 - [x] Relacionamento entre o User e as Notícias - One to Many
 - [x] Busca de Notícias por Palavras-Chaves
