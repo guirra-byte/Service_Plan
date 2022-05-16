@@ -32,7 +32,7 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 - [x] Inserção no Banco de Dados
 - [ ] Verificação se o Usuário possui o Plano de Serviço ativo 
 - [ ] Verificação de quantas Notícias o User possui
-- [ ] Autorização por meio de Auth Token - `JWT`
+- [ ] Autorização permissiva `JWT`
 - [x] Relacionamento entre as Categories e as Notícias - Many to Many
 - [x] Relacionamento entre o User e as Notícias - One to Many
 - [x] Busca de Notícias por Palavras-Chaves
